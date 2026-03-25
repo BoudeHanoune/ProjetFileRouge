@@ -1,0 +1,24 @@
+.character-card {
+    background: white;
+    border-radius: 18px;
+    padding: 24px 14px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-3px);
+}
+
+.character-card-kana {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #223766;
+    margin-bottom: 10px;
+}
+
+.character-card-romaji {
+    color: #66759c;
+    font-size: 1.05rem;
+}

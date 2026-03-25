@@ -1,0 +1,138 @@
+.auth-page {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 22px;
+    padding: 40px 36px;
+    box-shadow: 0 14px 40px rgba(79, 124, 255, 0.12);
+}
+
+.auth-card h2 {
+    font-size: 1.8rem;
+    color: #223766;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.auth-card .auth-subtitle {
+    text-align: center;
+    color: #607099;
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.auth-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.auth-field label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #3b4f7c;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.auth-field input {
+    padding: 13px 16px;
+    border: 1.5px solid #cfd8f6;
+    border-radius: 12px;
+    background: #f8faff;
+    color: #1f2a44;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-field input:focus {
+    border-color: #4f7cff;
+    box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.15);
+    background: white;
+}
+
+.auth-field input.error {
+    border-color: #f06c6c;
+    box-shadow: 0 0 0 3px rgba(240, 108, 108, 0.12);
+}
+
+.auth-field-error {
+    font-size: 0.83rem;
+    color: #d94f4f;
+    margin-top: 2px;
+}
+
+.auth-error-banner {
+    background: #fff0f0;
+    border: 1px solid #f5c0c0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: #c0392b;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.auth-submit {
+    width: 100%;
+    padding: 14px;
+    background: #4f7cff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, opacity 0.2s;
+    margin-top: 6px;
+}
+
+.auth-submit:hover:not(:disabled) {
+    background: #3a66e8;
+    transform: translateY(-1px);
+}
+
+.auth-submit:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 22px;
+    color: #607099;
+    font-size: 0.92rem;
+}
+
+.auth-footer a {
+    color: #4f7cff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.auth-footer a:hover {
+    opacity: 0.75;
+}
+
+.auth-loading-dots::after {
+    content: "";
+    animation: dots 1.2s steps(3, end) infinite;
+}
+
+@keyframes dots {
+    0%   { content: ""; }
+    33%  { content: "."; }
+    66%  { content: ".."; }
+    100% { content: "..."; }
+}
